@@ -1,3 +1,5 @@
+This project is an implementation of https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
