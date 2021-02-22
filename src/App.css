@@ -19,11 +19,10 @@
   font-size:18px;
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
-  min-width: 33%;
-  max-width: 50%;
-  min-height: 66%;
-  height: 400px;
-  max-height: 66%;
+  min-width: 350px;
+  max-width: 66%;
+  min-height: 400px;
+  max-height: 90%;
   border-radius: 12px;
   box-shadow: 0px 15px 50px 9px rgba(0,0,0,0.15);
   display: flex;
@@ -33,31 +32,34 @@
   position:relative;
 }
 
-.ProfileCard .upper{
+.ProfileCard .ProfileCard-upper{
   background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-color: red;
   position: relative;
-  height: 40%;
+  height: 190px;
   width:100%;
-}
-
-.ProfileCard .lower{
-  position: relative;
-  background-color: #fff;
-  height: 60%;
-  width:100%;
+  display: flex;
+  flex-direction: row;
 }
 
 #Avatar{
   border-radius: 100%;
   border: 5px solid white;
-  position:absolute;
-  top:25%;
-  left: 0; 
-  right: 0; 
   margin-left: auto; 
   margin-right: auto; 
-  width: auto;
+  width: 96px;
+  height: 96px;
+  align-self: flex-end;
 }
+
+.ProfileCard .ProfileCard-lower{
+  position: relative;
+  background-color: #ff0;
+  /* height: 100%; */
+  width:100%;
+}
+
 
 #PersonalInfo{
   text-align: center;
