@@ -1,8 +1,6 @@
-import img from "../images/image-victor.jpg";
-
-function Avatar() {
+function Avatar(props) {
     return (
-        <img src={img} id="Avatar"></img>
+        <img src={props.avatar} className="Avatar" alt="Avatar"></img>
     )
 }
 

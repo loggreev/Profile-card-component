@@ -2,17 +2,17 @@ import Avatar from "./Avatar";
 import PersonalInfo from "./PersonalInfo";
 import Stats from "./Stats";
 
-function ProfileCard() {
+function ProfileCard(props) {
     return (
         <div className="ProfileCard">
             <div className="ProfileCard-upper">
-                <Avatar />
+                <Avatar avatar={props.avatar} />
             </div>
             <div className="ProfileCard-middle">
-                <PersonalInfo name="Victor Crest" age="26" location="London" />
+                <PersonalInfo {...props.personalInfo} />
             </div>
             <div className="ProfileCard-lower">
-                <Stats />
+                <Stats stats={props.stats} />
             </div>
         </div>
     );

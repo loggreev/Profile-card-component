@@ -1,9 +1,13 @@
-.App{
+body{
   background-color: hsl(185, 75%, 39%);
   background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
   background-position: -400px -500px, 600px 300px;
+}
+
+.App{
   height:100vh;
+  width:100vw;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -20,28 +24,30 @@
   width: 66.67vw;
   max-width: 45vw;
   min-height: 400px;
-  max-height: 90%;
+  max-height: 90vh;
   border-radius: 12px;
   box-shadow: 0px 15px 50px 9px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow: hidden; /* give border radius to children */
   position:relative;
 }
 
 .ProfileCard .ProfileCard-upper{
-  background-image: url("./images/bg-pattern-card.svg");
+  background-image: url("images/bg-pattern-card.svg");
   background-repeat: repeat-x;
-  background-color: red;
+  background-color: #fff;
   height: 190px;
   width:100%;
   display: flex;
   flex-direction: row;
 }
 
-#Avatar{
+.Avatar{
   border-radius: 100%;
   border: 5px solid white;
+  background-color: white;
   margin-left: auto; 
   margin-right: auto; 
   width: 96px;
@@ -50,18 +56,12 @@
 }
 
 .ProfileCard .ProfileCard-middle{
-  background-color: #0ff;
+  background-color: #fff;
   width:100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-bottom: 1px solid hsl(0, 0%, 59%);
 }
-
-.ProfileCard .ProfileCard-lower{
-  position: relative;
-  background-color: #ff0;
-  width:100%;
-}
-
 
 .PersonalInfo{
   text-align: center;
@@ -72,7 +72,11 @@
 .PersonalInfo p{
   margin:0px;
   margin-bottom: 10px;
-  color:hsl(0, 0%, 59%)
+  color:hsl(0, 0%, 59%);
+}
+
+.PersonalInfo p:last-of-type{
+  margin: 0px;
 }
 
 .PersonalInfo .name{
@@ -85,32 +89,40 @@
   font-size: 0.8em;
 }
 
-.PersonalInfo p:last-of-type{
-  margin: 0px;
-}
-
-#Stats{
-  display: flex;
-  justify-content: space-between;
-}
-
-#Stats .StatsItem{
+.ProfileCard .ProfileCard-lower{
+  position: relative;
+  background-color: #fff;
   width:100%;
+}
+
+.Stats{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin: 0 50px; */
+  flex-wrap: wrap;
+}
+
+.Stats .StatsItem{
+  /* width:33%; */
   text-align: center;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10px;
+  margin: 27px 0;
 }
 
-#Stats .StatsItem .stats-number{
+.Stats .StatsItem p{
+  margin: 0;
+}
+
+.Stats .StatsItem .stats-number{
   color: hsl(229, 23%, 23%);
   font-weight: 700;
-  margin-bottom: 0px;
+  margin-bottom: 10.8px;
   font-size: 1.25em;
 }
 
-#Stats .StatsItem .stats-tag{
+.Stats .StatsItem .stats-tag{
   font-size: 0.6em;
   color:hsl(0, 0%, 59%);
   letter-spacing: 0.2em;
