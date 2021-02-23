@@ -8,9 +8,10 @@ function ProfileCard() {
             <div className="ProfileCard-upper">
                 <Avatar />
             </div>
-            <div className="ProfileCard-lower">
+            <div className="ProfileCard-middle">
                 <PersonalInfo name="Victor Crest" age="26" location="London" />
-                <hr></hr>
+            </div>
+            <div className="ProfileCard-lower">
                 <Stats />
             </div>
         </div>

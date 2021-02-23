@@ -1,6 +1,6 @@
 function PersonalInfo(props) {
     return (
-        <div id="PersonalInfo">
+        <div class="PersonalInfo">
             <p>
                 <span className="name">{props.name}</span>
                 {props.age}
