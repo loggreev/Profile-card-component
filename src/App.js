@@ -72,7 +72,9 @@ class App extends React.Component {
         <button onClick={this.addCard} id="addButton">+</button>
         <button onClick={this.removeCard} id="removeButton">-</button>
       </div>
-      {this.state.cards}
+      <div className="cardContainer">
+        {this.state.cards}
+      </div>
     </div>
   );
 
